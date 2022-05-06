@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulaire</title>
+</head>
+<body>
+
+    <h1>Formulaire DWWM</h1> 
+        
+        <form action="">
+           <table>
+            <tr >
+                <td class="labelo"><label for="">Nom</label></td> <td><input type="text" placeholder="Entrez votre nom" id="nom"></td>
+            </tr> 
+
+            <tr >
+                <td class="labelo"><label for=""> <label for="">Email</label> </label></td> <td><input type="email" placeholder="Entrez votre email" id="mails"></td>
+            </tr>
+
+            <tr >
+                <td class="labelo"><label for="">Indiquez votre satisfaction au cours de 1 à 10</label></td><td> <input type="text" placeholder="numéro de 1 à 10" id="notes"> </td>
+            </tr>
+
+            <tr>
+                <td class="labelo"> <label for="">Qui est votre Coach?</label> </td>
+                 <td>
+                     <select name="" class="" id="list">
+                    <option value="birante">Birante</option>
+                    <option value="malick">Malick</option>
+                    <option value="dim">Dim</option>
+                </select> 
+            </td>
+            </tr>
+           
+            <tr>
+                <td class="labelo">
+                    <label for="">Décrivez votre expérience jusque là</label>
+                </td>
+                <td>
+                    <textarea name="" class="" cols="30" rows="5" placeholder="Décrivez votre expérience ici..." id="textes"></textarea>
+                </td>
+            </tr>
+           </table>
+           <input type="submit" class="btn" value="Envoyez" onclick="valider(form)">
+
+        </form>
+
+        <!-- Ici seront afficher les données recuperees  -->
+        <p id="p_nom"></p>
+        <p id="p_mails"></p>
+        <p id="p_notes"></p>
+        <p id="p_list"></p>
+        <p id="p_textes"></p>
+    
+        
+<script src="script.js"> </script>
+</body>
+</html>
